@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleSidenav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>XpertGroup</span>
+  @if(isLogin){
+    <span class="ml-4 font-medium">
+      email:
+      <span class="font-normal">{{ email }}</span>
+    </span>
+    <span class="ml-4 font-medium">UsuarioId:
+      <span class="font-normal">{{ userId }}</span>
+    </span>
+  }
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" class="sidenav" opened>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/one']" routerLinkActive="router-link-active" >Inicio</a>
+      <a mat-list-item [routerLink]="['/one']">view one</a>
+      <a mat-list-item [routerLink]="['/two']">view two</a>
+      <a mat-list-item [routerLink]="['/three']">view three</a>
+      <a mat-list-item [routerLink]="['/four']">view four</a>
+      <a mat-list-item [routerLink]="['/five']">view five</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="contenido">
+      <router-outlet />
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
