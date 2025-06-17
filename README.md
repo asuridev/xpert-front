@@ -1,6 +1,6 @@
 # Prueba Técnica:
 Para el desarrollo de la apliacación front se construyó una SPA utilizando angular en su versión 19, esta permite utilizar caracteristicas como los stand-alone components por defecto y el modelo de reactividad basado en señales.
-Ademas se utilizó angular material como libreria de componentes.
+Ademas se utilizó angular material como libreria de componentes, y tailwind como  libreria de CSS.
 Se construyeron cinco paginas para cumplir con cado uno de los puntos solicitados. se pude interactuar con esta mediante la barra de navegación.
 
 !["app"](/assets/app.png)
