@@ -1,59 +1,43 @@
-# XpertFront
+# Prueba Técnica:
+Para el desarrollo de la apliacación front se construyó una SPA utilizando angular en su versión 19, esta permite utilizar caracteristicas como los stand-alone components por defecto y el modelo de reactividad basado en señales.
+Ademas se utilizó angular material como libreria de componentes.
+Se construyeron cinco paginas para cumplir con cado uno de los puntos solicitados. se pude interactuar con esta mediante la barra de navegación.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+!["app"](/assets/app.png)
 
-## Development server
+Se implementó lazy loading para optimizar el rendimiento, el javascript de cada uno de las paginas será cargado bajo demanda, a medida que se navega a través de estas.
 
-To start a local development server, run:
+!["lazy"](/assets/lazy.png)
 
-```bash
-ng serve
+
+## Deployment del proyecto.
+Para el despliegue del proyecto seguir los siguientes pasos:
+
+1. Clonar el repositorio.
+
+```shell script
+git clone https://github.com/asuridev/xpert-front.git
 ```
+2. Ingresar a la raíz del proyecto.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```shell script
+cd xpert-front
 ```
+3. instalar dependencias 
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+```shell script
+npm run install
 ```
+4. iniciar servidor de desarrollo
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+```shell script
+npm run start
 ```
+Este ultimo comando levantará un servidor de desarrollo en el puerto 4200.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+> **_NOTA:_**  la aplicación front solo será funcional si previamente se levantó los contenedores del backend a traves de docker compose.
 
-## Running unit tests
+## Verificando el funcionaminto del proyecto.
+navegar mediante la barra de navegacion por cada uno de las vistas, la vista numero cinco se encuentra protegida, si el usuario no ha realizado la operación de login lo redireccionará a la pagina de login.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
