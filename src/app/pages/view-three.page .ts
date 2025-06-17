@@ -125,7 +125,7 @@ export default class ViewThree {
         this.userService.setIsLogin(true);
       } catch (error) {
         console.log(error);
-        this.snackBar.open("Usuario contraseñas invalidas", "Undo");
+        this.snackBar.open("usuario o contraseña invalida", "Undo");
       }finally{
         this.isLoading = false;
       }
