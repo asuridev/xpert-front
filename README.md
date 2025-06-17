@@ -26,7 +26,7 @@ cd xpert-front
 3. instalar dependencias 
 
 ```shell script
-npm run install
+npm install
 ```
 4. iniciar servidor de desarrollo
 
